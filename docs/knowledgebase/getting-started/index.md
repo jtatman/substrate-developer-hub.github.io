@@ -23,7 +23,7 @@ Use a terminal shell to execute the following commands:
 ```bash
 sudo apt update
 # May prompt for location information
-sudo apt install -y git clang curl libssl-dev llvm libudev-dev
+sudo apt install -y git clang curl libssl-dev llvm
 ```
 
 ### Arch Linux
@@ -41,14 +41,6 @@ Run these commands from a terminal:
 ```bash
 sudo dnf update
 sudo dnf install clang curl git openssl-devel
-```
-
-### OpenSUSE
-
-Run these commands from a terminal:
-
-```bash
-sudo zypper install clang curl git openssl-devel llvm-devel libudev-devel
 ```
 
 ### macOS
@@ -79,18 +71,6 @@ brew install openssl
 Please refer to the separate [guide for native Windows development](windows-users).
 
 ## 2. Rust Developer Environment
-
-### Automated `getsubstrate.io` Script
-
-For most users you can run our script to automate the steps listed below:
-
-```bash
-curl https://getsubstrate.io -sSf | bash -s -- --fast
-```
-
-If this gives any errors, please follow the steps below to manually configure rust on your machine.
-
-### Manual Rust Configuration
 
 This guide uses [`rustup`](https://rustup.rs/) to help manage the Rust toolchain. First install and
 configure `rustup`:
